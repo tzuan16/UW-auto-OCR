@@ -1,4 +1,4 @@
-*USER INSTRUCTIONS*
+*UW-auto-OCR USER INSTRUCTIONS*
 
 1. This program requires Firefox to be downloaded on your computer for now, but it should be able to work with different web browsers with some simple code changes.
 2. Download the correct version of the Firefox Driver for your computer from https://github.com/mozilla/geckodriver/releases
