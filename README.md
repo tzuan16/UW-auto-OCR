@@ -1,10 +1,28 @@
-*UW-auto-OCR USER INSTRUCTIONS*
+##UW-auto-OCR USER INSTRUCTIONS
 
-1. This program requires Firefox to be downloaded on your computer for now, but it should be able to work with different web browsers with some simple code changes.
-2. Download the correct version of the Firefox Driver for your computer from https://github.com/mozilla/geckodriver/releases
-Note: If you ended up using a different web browser that is not Firefox, please download the corresponding Driver from: https://github.com/SeleniumHQ/selenium/blob/trunk/py/docs/source/index.rst
-3. upzip or untar the downloaded driver and move it to where your PATH is pointed to.
-To do this, first try ``echo $PATH`` to see where your PATH is pointed to (not sure how this works but there might be multiple. I ended up using ``/user/bin/``).  Then, you move the file move the file into the directory PATH is pointed to.
-4. Clone this project to your local box and you will see a file named setUp.sh. To give this file an executable, we run ``chmod +rwx setUp.sh`` in the directory that setUp.sh is in.
-5. (This part is not tested yet, might need to download more packages) In the same directory as above,  run ``./setUp.sh`` to download the packages.
-6. run ``python CourseFull.py``
+Premises: Python 3 is installed on your machine
+
+### Firefox
+
+1. Download the correct version of the Firefox Driver for your computer from https://github.com/mozilla/geckodriver/releases
+
+2. upzip or untar the downloaded driver and move it to where your PATH is pointed to.
+To do this, first try ``echo $PATH`` to see where your PATH is pointed to (e.g. ``/user/bin/`` or ``/user/local/bin/``).  Move it via Finder or by running ``mv geckodriver ~/Downloads /user/local/bin``
+
+3. Clone this project to your local box and in the directory, run ``sh setUp.sh``
+
+4. run ``python3 CourseFullFirefox.py``
+
+### Chrome
+
+1. Download the correct version of the Chrome Driver for your computer from https://chromedriver.chromium.org/downloads
+
+2. upzip or untar the downloaded driver and move it to where your PATH is pointed to.
+To do this, first try ``echo $PATH`` to see where your PATH is pointed to (e.g. ``/user/bin/`` or ``/user/local/bin/``).  Move it via Finder or by running ``mv chromedriver ~/Downloads /user/local/bin``
+
+3. For MacOS Catalina, you need to verify the developer by running ``xattr -d com.apple.quarantine chromedriver`` in the directory where chromedriver is stored
+
+3. Clone this project to your local box and in the directory, run ``sh setUp.sh``
+
+4. run ``python3 CourseFullChrome.py``
+

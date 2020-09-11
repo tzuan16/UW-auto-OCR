@@ -1,2 +1,2 @@
-pip install requests
-pip install selenium
+python3 -m pip install requests
+python3 -m pip install selenium
