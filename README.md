@@ -1,6 +1,6 @@
-##UW-auto-OCR USER INSTRUCTIONS
+## UW-auto-OCR USER INSTRUCTIONS
 
-Premises: Python 3 is installed on your machine
+Premise: Python 3 is installed on your machine
 
 ### Firefox
 
